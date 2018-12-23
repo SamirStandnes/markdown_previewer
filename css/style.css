@@ -1,0 +1,120 @@
+:root {
+  --editor: 580px;
+  --color-one: #660066;
+  --color-two: #d896ff;
+  --color-three: #efbbff;
+  --color-borders: 	#be29ec;
+  --font-nav-color: white; 
+}
+
+#app {
+  background-color:	white;
+  font-family: 'Gaegu', cursive;
+  min-width: 529px;
+}
+
+#info{
+  float: right;
+  padding-top: 150px;
+  padding-right: 450px;
+  font-size: 25px;
+  color: var(--color-one);
+}
+
+#editor-parent{
+ display: flex;
+ min-height: 200px;
+ margin-bottom: 15px;
+}
+
+#editor-child {
+  width: 600px;
+  height: 200px;
+  margin: 40px 0px 50px 240px;
+ 
+  }
+
+#editor{
+    width: 99%;
+    resize: inherit;
+    border: none;
+ } 
+
+#preview-parent{
+display: flex;
+}
+#preview-child {
+  background-color: var(--color-three);
+  margin: 20px 0px 50px 150px;
+  }
+#preview{
+padding-left: 10px;  
+background-color: var(--color-three);
+  
+}
+#big {
+  margin: 5x 5px 5px 5px;
+  width:100%;
+  height: 100%; 
+  }
+
+
+#logo {
+  width: 20px;
+  heigth: 20px;
+ }
+
+
+#navbar {
+ list-style-type:none;
+ display: flex;
+ padding: 10px 0px 10px 10px;
+ background-color: var(--color-one);
+ margin: 0 0 2px 0;
+ height: 100%;
+ border-bottom: solid;
+ border-color: var(--color-borders);
+ font-size: 20px;
+ color: var(--font-nav-color);
+}
+#expandButton:hover{
+  cursor:pointer;
+  color: var(--color-three);
+}
+
+
+code {background-color: white;}
+table {border: solid .5px;}
+th, td {border:solid .5px;}
+
+
+@media (max-width: 700px) {
+  
+  #editor-child {
+  width: 500px;
+  height: 200px;
+  margin: 40px 0px 50px 0px;
+ 
+  }
+  
+  #preview-child {
+  background-color: var(--color-three);
+  margin: 20px 0px 50px 0px;
+  width: 500px;
+  }
+  
+}
+
+
+@media (max-width: 1600px) {
+  #info{
+    display: none;
+  } 
+}
+
+@media (max-width: 1900px) {
+  #info{
+    padding-right: 50px;
+  } 
+}
+
